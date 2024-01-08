@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+    </head>
+    <body>
+        <script src="static/js/script.js"></script>
+        <form action="">
+            <input type="text" id="chatroomNameText" autocomplete="off"/>
+            <button onclick="connectToChatroom(event)">Connect</button>
+            <button onclick="leaveRoom(event)">Disconnect</button>
+            <label id="connected-label">Set the chatroom name and click 'connect' to join it</label>
+        </form>
+        <h1>WebSocket Chat</h1>
+        <form action="" onsubmit="sendMessage(event)">
+            <input type="text" id="messageText" autocomplete="off"/>
+            <button>Send</button>
+        </form>
+        <ul id='messages'>
+        </ul>
+    </body>
+</html>

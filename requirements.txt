@@ -1,0 +1,7 @@
+redis
+fastapi
+uvicorn
+pytest
+jinja2
+httpx
+websockets
